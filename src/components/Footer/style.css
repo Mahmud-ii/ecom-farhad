@@ -34,38 +34,30 @@ footer li {
   margin-bottom: 10px;
   opacity: 0.5;
 }
-.span_2{
+.span_2 {
   grid-column: span 2;
   padding: 0 50px;
 }
 
-.box_inner h2{
+.box_inner h2 {
   text-align: center;
 }
 
-.box_inner .terms{
+.box_inner .terms {
   display: flex;
   justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.box_inner img{
+.box_inner img {
   width: 90%;
 }
 
-
-
-
-
-
-
-
-
-.mr-10{
+.mr-10 {
   margin-right: 10px;
 }
-.footer_copyright{
+.footer_copyright {
   background: #000;
   color: var(--small-text-color);
   text-align: center;

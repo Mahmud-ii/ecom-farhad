@@ -88,18 +88,18 @@ li {
   list-style: none;
 }
 
-img{
+img {
   width: 100%;
 }
 
-section{
+section {
   padding: 60px 0px;
 }
 
-.w-100{
+.w-100 {
   width: 100% !important;
 }
-.section__title{
+.section__title {
   color: var(--primary-color);
   font-weight: 600;
 }
@@ -314,8 +314,8 @@ button {
   grid-gap: 10px;
 }
 
-@media only screen and (max-width: 768px){
-  section{
+@media only screen and (max-width: 768px) {
+  section {
     padding: 40px 0px;
   }
 }

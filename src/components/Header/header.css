@@ -14,6 +14,7 @@
 /*------head-----------*/
 /*------search-----------*/
 .search {
+  height: 6vh;
   padding: 13px 0;
 }
 .search .logo img {
@@ -29,7 +30,7 @@
   /* padding: 10px; */
   border-radius: 50px;
 }
-.search__btn{
+.search__btn {
   cursor: pointer;
   padding-left: 10px;
   border-radius: 0 50px 50px 0;
@@ -118,29 +119,30 @@ header ul li a:hover {
 .open {
   display: none;
 }
-.search.active, .header.active {
+.search.active,
+.header.active {
   position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
   background-color: #fff;
-  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.3);
   transition: 0.5s;
 }
-.search.active{
+/* .search.active{
   height: 12vh;
-}
-.header.active{
-  display: block;
-  top: 12vh;
+} */
+.header.active {
+  display: flex;
+  top: 6vh;
 }
 
-.loginReg{
-  font-size: .8rem;
+.loginReg {
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
-.icon{
+.icon {
   align-items: center;
 }
 
@@ -151,12 +153,12 @@ header ul li a:hover {
   cursor: pointer;
 }
 
-.profile{
+.profile {
   position: relative;
   z-index: 9;
 }
 
-.profile .profile__actions{
+.profile .profile__actions {
   position: absolute;
   top: 100%;
   left: 0;
@@ -172,14 +174,14 @@ header ul li a:hover {
   cursor: pointer;
 }
 
-.admin__buttons{
+.admin__buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.show__profileActions{
+.show__profileActions {
   display: block !important;
 }
 
@@ -191,7 +193,8 @@ header ul li a:hover {
     position: absolute;
     display: block;
     list-style: none;
-    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     left: 0;
     top: 0;
     transition: all 0.5s ease-in-out;
