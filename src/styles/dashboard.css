@@ -1,28 +1,31 @@
-.revenue__box, .order__box, .products__box, .users__box{
+.revenue__box,
+.order__box,
+.products__box,
+.users__box {
   padding: 20px;
   border-radius: 5px;
 }
 
-.revenue__box{
+.revenue__box {
   background: var(--card-bg-01);
 }
 
-.products__box{
+.products__box {
   background: var(--card-bg-03);
 }
 
-.order__box{
+.order__box {
   background: var(--card-bg-04);
 }
 
-.users__box{
+.users__box {
   background: var(--card-bg-04);
 }
 
 .revenue__box h5,
-.order__box h5, 
-.products__box h5, 
-.users__box h5{
+.order__box h5,
+.products__box h5,
+.users__box h5 {
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--primary-color);
@@ -30,11 +33,22 @@
 }
 
 .revenue__box span,
-.order__box span, 
-.products__box span, 
-.users__box span{
+.order__box span,
+.products__box span,
+.users__box span {
   font-size: 2rem;
   font-weight: 600;
   color: var(--primary-color);
 }
 
+.table-dash > thead > tr > *,
+.table-dash > tbody > tr > * {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .dash-section {
+    padding: 0;
+  }
+}

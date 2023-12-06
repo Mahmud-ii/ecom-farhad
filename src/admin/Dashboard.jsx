@@ -1,19 +1,18 @@
-import React from 'react'
-import AddProducts from './AddProducts'
-import {Container, Row, Col} from 'reactstrap'
-import '../styles/dashboard.css'
-import useGetData from '../custom-hooks/useGetData'
+import React from "react";
+import AddProducts from "./AddProducts";
+import { Container, Row, Col } from "reactstrap";
+import "../styles/dashboard.css";
+import useGetData from "../custom-hooks/useGetData";
 
 const Dashboard = () => {
-
-  const {data: products} = useGetData('products')
-  const {data: users} = useGetData('users')
+  const { data: products } = useGetData("products");
+  const { data: users } = useGetData("users");
 
   return (
     <>
       <section>
         <Container>
-          <Row>
+          <Row className="row-100">
             <Col className="lg-3">
               <div className="revenue__box">
                 <h5>Total Sales</h5>
@@ -27,13 +26,13 @@ const Dashboard = () => {
               </div>
             </Col>
             <Col className="lg-3">
-            <div className="products__box">
+              <div className="products__box">
                 <h5>Total Products</h5>
                 <span>{products.length}</span>
               </div>
             </Col>
             <Col className="lg-3">
-            <div className="users__box">
+              <div className="users__box">
                 <h5>Total Users</h5>
                 <span>{users.length}</span>
               </div>
@@ -42,7 +41,7 @@ const Dashboard = () => {
         </Container>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

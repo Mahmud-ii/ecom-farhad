@@ -1,14 +1,25 @@
-table tr td img{
+table tr td img {
   width: 80px !important;
   height: 80px !important;
   object-fit: cover;
 }
 
-td i{
+td i {
   cursor: pointer;
 }
 
 td,
-th{
+th {
   color: var(--primary-color);
+}
+
+.min-height {
+  min-height: 100vh;
+}
+
+.border-radii {
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid #8e7248;
+  border-radius: 50%;
 }
