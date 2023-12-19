@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import AddProducts from '../admin/AddProducts'
 import AllProducts from '../admin/AllProducts'
 import Dashboard from '../admin/Dashboard'
@@ -16,7 +16,7 @@ import ProtectedRoute from './ProtectedRoute'
 const Routers = () => {
   return (
     <Routes>
-      <Route path='/' element={<Navigate to='home'/>}/>
+      <Route path='/' element={<Home/>}/>
       <Route path='home' element={<Home/>}/>
       <Route path='shop' element={<Shop/>}/>
       <Route path='shop/:id' element={<ProductDetails/>}/>
